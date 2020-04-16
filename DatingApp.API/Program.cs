@@ -13,6 +13,11 @@ namespace DatingApp.API
     {
         public static void Main(string[] args)
         {
+            NewMethod(args);
+        }
+
+        private static void NewMethod(string[] args)
+        {
             CreateHostBuilder(args).Build().Run();
         }
 
@@ -24,3 +29,4 @@ namespace DatingApp.API
                 });
     }
 }
+

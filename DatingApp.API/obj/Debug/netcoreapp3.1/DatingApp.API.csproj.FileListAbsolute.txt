@@ -57,3 +57,11 @@ C:\Users\rkeenan\datingapp\DatingApp.API\bin\Debug\netcoreapp3.1\runtimes\win-x6
 C:\Users\rkeenan\datingapp\DatingApp.API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\rkeenan\datingapp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.csproj.CopyComplete
 C:\Users\rkeenan\datingapp\DatingApp.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\rkeenan\datingapp\datingApp.api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\rkeenan\datingapp\datingApp.api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\rkeenan\datingapp\datingApp.api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\rkeenan\datingapp\datingApp.api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\rkeenan\datingapp\datingApp.api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\rkeenan\datingapp\datingapp.api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\rkeenan\datingapp\datingapp.api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\rkeenan\datingapp\datingapp.api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

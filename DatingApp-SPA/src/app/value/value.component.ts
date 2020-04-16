@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-value',
@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ValueComponent implements OnInit {
 values: any;
+
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
