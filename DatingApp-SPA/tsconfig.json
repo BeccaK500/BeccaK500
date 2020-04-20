@@ -11,6 +11,13 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
+    "typeRoots": [
+    "nodes_modules/@types",
+    "src/typeings.d.ts"
+    ],
+    
+    
+    
     "lib": [
       "es2018",
       "dom"
