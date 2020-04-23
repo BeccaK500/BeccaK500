@@ -14,7 +14,7 @@ import { MemberListComponent } from './member-list/member-list.component';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
-import { ErrorInterceptorProvider } from './_services/error.Interceptor';
+import { ErrorInterceptorProvider } from './_services/error.interceptor.ts';
 
 
 
@@ -40,7 +40,7 @@ import { ErrorInterceptorProvider } from './_services/error.Interceptor';
    ],
    providers: [
       AuthService,
-      ErrorInterceptorProvider
+      ErrorInterceptorProvider,
    ],
 
    bootstrap: [
