@@ -7,7 +7,7 @@ import { User } from '../_models/user';
 const HttpOptions = {
   headers: new HttpHeaders(
     {
-      Authorization: 'Bearer  ' + localStorage.getItem('Token')
+      Authorisation : 'Bearer  ' + localStorage.getItem('Token')
     }
   )
 };
@@ -26,10 +26,9 @@ getUsers(): Observable<User[]> {
   return this.http.get<User[]>(this.baseUrl + 'users', HttpOptions);
 }
 
-getUser(id): Observable<User> {
+getUser(id: string): Observable<User> {
 
   return this.http.get<User>(this.baseUrl + 'users/' + id, HttpOptions);
 }
 
-
-} 
+}
