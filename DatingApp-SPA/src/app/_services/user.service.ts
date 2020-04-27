@@ -4,13 +4,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../_models/user';
 
-const HttpOptions = {
-  headers: new HttpHeaders(
-    {
-      Authorisation : 'Bearer  ' + localStorage.getItem('Token')
-    }
-  )
-};
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -23,12 +18,12 @@ constructor(private http: HttpClient) { }
 
 getUsers(): Observable<User[]> {
 
-  return this.http.get<User[]>(this.baseUrl + 'users', HttpOptions);
+  return this.http.get<User[]>(this.baseUrl + 'users');
 }
 
-getUser(id: string): Observable<User> {
+getUser(id): Observable<User> {
 
-  return this.http.get<User>(this.baseUrl + 'users/' + id, HttpOptions);
+  return this.http.get<User>(this.baseUrl + 'users/' + id);
 }
 
 }
