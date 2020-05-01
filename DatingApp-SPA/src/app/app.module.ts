@@ -28,6 +28,7 @@ import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { MembersCardComponent } from './members/members-card/members-card.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import {TimeAgoPipe} from 'time-ago-pipe';
 
 
 
@@ -50,7 +51,8 @@ export function tokenGetter() {
       MembersCardComponent,
       MemberDetailComponent,
       MemberEditComponent,
-      PhotoEditorComponent
+      PhotoEditorComponent,
+      TimeAgoPipe
 
    ],
    imports: [
