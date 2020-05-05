@@ -62,4 +62,23 @@
 .theme-red .bs-datepicker-body table td.week span {
   color: #128f76;
 }
-  
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #2c3e50;
+  border-color: transparent;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #D8DDEF;
+  border-color: #D8DDEF;
+  color:#2c3e50;
+}
+
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show>.btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #217dbb;
+  border-color: #1f76b0;
+}
