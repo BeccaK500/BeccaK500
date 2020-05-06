@@ -26,11 +26,12 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
 import { MemberEditResolver } from './_resolver/member-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
-import { MembersCardComponent } from './members/members-card/members-card.component';
+import { MemberCardComponent } from './members/member-card/member-card.component';
 import { TimeagoModule } from 'ngx-timeago';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker/ngx-bootstrap-datepicker';
 import { PaginationModule } from 'ngx-bootstrap/pagination/ngx-bootstrap-pagination';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { ListsResolver } from './_resolver/lists.resolver';
 
 
 
@@ -49,10 +50,10 @@ export function tokenGetter() {
       MemberListComponent,
       ListsComponent,
       MessagesComponent,
-      MembersCardComponent,
       MemberDetailComponent,
       MemberEditComponent,
       PhotoEditorComponent,
+      MemberCardComponent
 
    ],
    imports: [
@@ -91,6 +92,8 @@ export function tokenGetter() {
       MemberDetailResolver,
       MemberListResolver, MemberEditResolver,
       PreventUnsavedChanges,
+      ListsResolver
+      
 
 
 
