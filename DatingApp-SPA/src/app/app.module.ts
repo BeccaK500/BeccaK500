@@ -18,7 +18,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
-import { TabsModule } from 'ngx-bootstrap/tabs';
+import { TabsModule } from 'ngx-bootstrap/tabs/ngx-bootstrap-tabs';
 import { MemberDetailResolver } from './_resolver/member-detail.resolver';
 import { MemberListResolver } from './_resolver/member-list.resolver';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
@@ -32,6 +32,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker/ngx-bootstrap-datep
 import { PaginationModule } from 'ngx-bootstrap/pagination/ngx-bootstrap-pagination';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { ListsResolver } from './_resolver/lists.resolver';
+import { MessagesResolver } from './_resolver/messages.resolver';
+import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
 
 
 
@@ -53,7 +55,8 @@ export function tokenGetter() {
       MemberDetailComponent,
       MemberEditComponent,
       PhotoEditorComponent,
-      MemberCardComponent
+      MemberCardComponent,
+      MemberMessagesComponent
 
    ],
    imports: [
@@ -92,11 +95,8 @@ export function tokenGetter() {
       MemberDetailResolver,
       MemberListResolver, MemberEditResolver,
       PreventUnsavedChanges,
-      ListsResolver
-      
-
-
-
+      ListsResolver,
+      MessagesResolver
    ],
 
    bootstrap: [
