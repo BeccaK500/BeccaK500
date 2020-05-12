@@ -34,6 +34,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { ListsResolver } from './_resolver/lists.resolver';
 import { MessagesResolver } from './_resolver/messages.resolver';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
+import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
 
 
 
@@ -56,7 +57,8 @@ export function tokenGetter() {
       MemberEditComponent,
       PhotoEditorComponent,
       MemberCardComponent,
-      MemberMessagesComponent
+      MemberMessagesComponent,
+      AdminPanelComponent
 
    ],
    imports: [
